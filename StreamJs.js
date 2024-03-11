@@ -255,7 +255,7 @@ function linkinApp() {
     window.location.href = openLinkinlink;
 }
 
-function x_player() {
+function xplayer() {
     const openLinkinlink = bisallink;
     const openX = `intent:${openLinkinlink}#Intent;package=com.daljeet.xplayer;end`;
     window.location.href = openX;
