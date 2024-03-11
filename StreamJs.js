@@ -123,7 +123,43 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-// Video player setup
+function toggleWidth(element) {
+    var links = document.querySelectorAll('.about-nav a');
+    links.forEach(function (link) {
+        link.classList.remove('active');
+    });
+
+    element.classList.add('active');
+}
+function toggleWidthnav(element) {
+    var links = document.querySelectorAll('.nryt a');
+    links.forEach(function (link) {
+        link.classList.remove('active');
+    });
+
+    element.classList.add('active');
+    var links = document.querySelectorAll('.about-nav a');
+    links.forEach(function (link) {
+        link.classList.remove('active');
+    });
+    let wlcm = document.querySelector(".wlcm")
+    wlcm.classList.add('active');
+}
+
+if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+    Shery.mouseFollower();
+    Shery.makeMagnet(".magnet");
+}
+
+
+// file name showing 
+var div = document.getElementById('myDiv');
+var text = div.textContent;
+if (text.length > 300) {
+    div.textContent = text.slice(0, 300) + "....";
+}
+
+// video player 
 const controls = [
     'play-large',
     'rewind', 'play',
