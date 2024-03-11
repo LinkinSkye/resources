@@ -269,7 +269,7 @@ function hd_player() {
 }
 
 function linkinDownload() {
-    const openLinkinlink = Linkinlink;
+    const openLinkinlink = bisallink;
     window.location.href = openLinkinlink;
       }
 
@@ -279,7 +279,7 @@ function linkinApp() {
 }
 
 function x_player() {
-    const openLinkinlink = Linkinlink;
+    const openLinkinlink = bisallink;
     const openX = `intent:${openLinkinlink}#Intent;package=com.daljeet.xplayer;end`;
     window.location.href = openX;
 }
