@@ -1,6 +1,7 @@
 let homeBtn = document.querySelector(".home-btn")
 let abtBtn = document.querySelector(".about-btn")
 let dldBtn_outer = document.querySelector(".downloadBtn")
+let appBtn_outer = document.querySelector(".appBtn")
 let file_name = document.querySelector(".file-name")
 let note_msg = document.querySelector(".note-msg")
 let about_nav = document.querySelector(".about-nav")
