@@ -108,6 +108,7 @@ footer_bisal_btn_clicked = () => {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
+    storeBtn_outer.style.display = "none";
     file_name.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
