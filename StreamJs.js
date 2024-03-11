@@ -28,6 +28,7 @@ homeBtn.classList.add('active');
 // when clicking about
 abtBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "none";
+    appBtn_outer.style.display = "none";
     file_name.style.display = "none";
     note_msg.style.display = "none";
     footer.style.display = "none";
@@ -41,6 +42,7 @@ abtBtn.addEventListener("click", () => {
 // when clicking home
 homeBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "flex";
+    appBtn_outer.style.display = "flex";
     file_name.style.display = "block";
     note_msg.style.display = "block";
     footer.style.display = "block";
@@ -68,6 +70,7 @@ function bot_btn_clicked() {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
+    appBtn_outer.style.display = "none";
     file_name.style.display = "none";
     note_msg.style.display = "none";
     footer.style.display = "none";
@@ -107,6 +110,7 @@ footer_bisal_btn_clicked = () => {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
+    appBtn_outer.style.display = "none";
     file_name.style.display = "none";
     note_msg.style.display = "none";
     footer.style.display = "none";
