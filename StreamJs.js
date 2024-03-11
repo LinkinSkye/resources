@@ -268,12 +268,12 @@ function hd_player() {
     window.location.href = openHDplayer;
 }
 
-function LinkinDownload() {
+function linkinDownload() {
     const openLinkinlink = Linkinlink;
     window.location.href = openLinkinlink;
       }
 
-function LinkinApp() {
+function linkinApp() {
     const openLinkinlink = `https://play.google.com/store/apps/details?id=com.daljeet.xplayer`;
     window.location.href = openLinkinlink;
 }
