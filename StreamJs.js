@@ -1,6 +1,8 @@
 let homeBtn = document.querySelector(".home-btn")
 let abtBtn = document.querySelector(".about-btn")
 let dldBtn_outer = document.querySelector(".downloadBtn")
+let storeBtn_outer = document.querySelector(".StoreBtn")
+
 let file_name = document.querySelector(".file-name")
 let about_nav = document.querySelector(".about-nav")
 let bot_btn = document.querySelector('.bot-btn')
@@ -26,6 +28,7 @@ homeBtn.classList.add('active');
 // when clicking about
 abtBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "none";
+    storeBtn_outer.style.display = "none";
     file_name.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
@@ -38,6 +41,7 @@ abtBtn.addEventListener("click", () => {
 // when clicking home
 homeBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "flex";
+    storeBtn_outer.style.display = "flex";
     file_name.style.display = "block";
     footer.style.display = "block";
     window.location.href = "#main";
@@ -64,6 +68,8 @@ function bot_btn_clicked() {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
+    storeBtn_outer.style.display = "none";
+
     file_name.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
