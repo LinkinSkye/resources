@@ -232,18 +232,11 @@ document.addEventListener('keydown', function (e) {
 const videolink = window.location.href;
 const bisallink = videolink.replace("/page/", "/watch/");
 
-function vlc_player() {
-    const openbisallink = bisallink;
-    const openVlc = `vlc://${openbisallink}`;
-    window.location.href = openVlc;
+function xplayer() {
+    const openLinkinlink = bisallink;
+    const openX = `intent:${openLinkinlink}#Intent;package=com.daljeet.xplayer;end`;
+    window.location.href = openX;
 }
-
-function mx_player() {
-    const openbisallink = bisallink;
-    const openMx = `intent:${openbisallink}#Intent;package=com.mxtech.videoplayer.ad;end`;
-    window.location.href = openMx;
-}
-
 
 function linkinDownload() {
     const openLinkinlink = bisallink;
@@ -255,8 +248,4 @@ function linkinApp() {
     window.location.href = openLinkinlink;
 }
 
-function xplayer() {
-    const openLinkinlink = bisallink;
-    const openX = `intent:${openLinkinlink}#Intent;package=com.daljeet.xplayer;end`;
-    window.location.href = openX;
-}
+
