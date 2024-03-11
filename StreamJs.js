@@ -1,8 +1,6 @@
 let homeBtn = document.querySelector(".home-btn")
 let abtBtn = document.querySelector(".about-btn")
 let dldBtn_outer = document.querySelector(".downloadBtn")
-let storeBtn_outer = document.querySelector(".StoreBtn")
-
 let file_name = document.querySelector(".file-name")
 let about_nav = document.querySelector(".about-nav")
 let bot_btn = document.querySelector('.bot-btn')
@@ -22,13 +20,12 @@ if (document.getElementById("heading").classList.contains("title")) {
 }
 
 
-// adding under in home btn at first
+// adding under in home btn at first 
 homeBtn.classList.add('active');
 
 // when clicking about
 abtBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "none";
-    storeBtn_outer.style.display = "none";
     file_name.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
@@ -41,7 +38,6 @@ abtBtn.addEventListener("click", () => {
 // when clicking home
 homeBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "flex";
-    storeBtn_outer.style.display = "flex";
     file_name.style.display = "block";
     footer.style.display = "block";
     window.location.href = "#main";
@@ -68,8 +64,6 @@ function bot_btn_clicked() {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
-    storeBtn_outer.style.display = "none";
-
     file_name.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
@@ -108,7 +102,6 @@ footer_bisal_btn_clicked = () => {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
-    storeBtn_outer.style.display = "none";
     file_name.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
@@ -142,7 +135,7 @@ contact_btn.addEventListener("click", () => {
     timer = 0;
 })
 
-// btn animations
+// btn animations 
 let dldBtn = document.querySelectorAll('.downloadBtn button')
 dldBtn.forEach((i) => {
     i.style.animation = `strtLoad 1s ease ${timer}s forwards, linksBtnAn 2s ease ${timer}s infinite`
@@ -190,14 +183,14 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navi
 }
 
 
-// file name showing
+// file name showing 
 var div = document.getElementById('myDiv');
 var text = div.textContent;
 if (text.length > 300) {
     div.textContent = text.slice(0, 300) + "....";
 }
 
-// video player
+// video player 
 const controls = [
     'play-large',
     'rewind', 'play',
@@ -215,9 +208,7 @@ const controls = [
     'fullscreen'
 ];
 document.addEventListener('DOMContentLoaded', () => {
-    const player = Plyr.setup('.player', {
-        controls
-    });
+    const player = Plyr.setup('.player', { controls });
 });
 
 // disabling right click
@@ -239,47 +230,41 @@ document.addEventListener('keydown', function (e) {
 
 
 const videolink = window.location.href;
-const Linkinlink = videolink.replace("/page/", "/watch/");
+const bisallink = videolink.replace("/page/", "/watch/");
 
 function vlc_player() {
-    const openLinkinlink = Linkinlink;
-    const openVlc = `vlc://${openLinkinlink}`;
+    const openbisallink = bisallink;
+    const openVlc = `vlc://${openbisallink}`;
     window.location.href = openVlc;
 }
 
 function mx_player() {
-    const openLinkinlink = Linkinlink;
-    const openMx = `intent:${openLinkinlink}#Intent;package=com.mxtech.videoplayer.ad;end`;
+    const openbisallink = bisallink;
+    const openMx = `intent:${openbisallink}#Intent;package=com.mxtech.videoplayer.ad;end`;
     window.location.href = openMx;
 }
 
-function x_player() {
-    const openLinkinlink = Linkinlink;
-    const openX = `intent:${openLinkinlink}#Intent;package=com.daljeet.xplayer;end`;
-    window.location.href = openX;
-}
-
 function playit_player() {
-    const openLinkinlink = Linkinlink;
-    const openPlayit = `playit://playerv2/video?url=${openLinkinlink}`;
+    const openbisallink = bisallink;
+    const openPlayit = `playit://playerv2/video?url=${openbisallink}`;
     window.location.href = openPlayit;
 }
 
 function s_player() {
-    const openLinkinlink = Linkinlink;
-    const openSplayer = `intent:${openLinkinlink}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
+    const openbisallink = bisallink;
+    const openSplayer = `intent:${openbisallink}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
     window.location.href = openSplayer;
 }
 
 function km_player() {
-    const openLinkinlink = Linkinlink;
-    const openKmplayer = `intent:${openLinkinlink}#Intent;package=com.kmplayer;end`;
+    const openbisallink = bisallink;
+    const openKmplayer = `intent:${openbisallink}#Intent;package=com.kmplayer;end`;
     window.location.href = openKmplayer;
 }
 
 function hd_player() {
-    const openLinkinlink = Linkinlink;
-    const openHDplayer = `intent:${openLinkinlink}#Intent;package=uplayer.video.player;end`;
+    const openbisallink = bisallink;
+    const openHDplayer = `intent:${openbisallink}#Intent;package=uplayer.video.player;end`;
     window.location.href = openHDplayer;
 }
 
@@ -288,8 +273,13 @@ function LinkinDownload() {
     window.location.href = openLinkinlink;
       }
 
-
 function LinkinApp() {
     const openLinkinlink = `https://play.google.com/store/apps/details?id=com.daljeet.xplayer`;
     window.location.href = openLinkinlink;
-      }
+}
+
+function x_player() {
+    const openLinkinlink = Linkinlink;
+    const openX = `intent:${openLinkinlink}#Intent;package=com.daljeet.xplayer;end`;
+    window.location.href = openX;
+}
