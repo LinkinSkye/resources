@@ -272,7 +272,7 @@ function xPlayer() {
     window.location.href = openXPlayer;
 }
 
-function linkInApp() {
+function linkinApp() {
     const app = `https://play.google.com/store/apps/details?id=com.daljeet.xplayer`;
     window.location.href = app;
 }
