@@ -183,13 +183,6 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navi
 }
 
 
-// file name showing 
-var div = document.getElementById('myDiv');
-var text = div.textContent;
-if (text.length > 300) {
-    div.textContent = text.slice(0, 300) + "....";
-}
-
 // video player 
 const controls = [
     'play-large',
