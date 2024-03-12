@@ -223,7 +223,7 @@ document.addEventListener('keydown', function (e) {
 
 
 const videolink = window.location.href;
-const bisallink = videolink.replace("/watch/", "/");
+const bisallink = videolink.replace("/page/", "/watch/");
 
 function vlc_player() {
     const openbisallink = bisallink;
