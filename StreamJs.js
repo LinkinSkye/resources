@@ -223,52 +223,52 @@ document.addEventListener('keydown', function (e) {
 
 
 const videolink = window.location.href;
-const bisallink = videolink.replace("/page/", "/watch/");
+const linkin_link = videolink.replace("/page/", "/watch/");
 
 function vlc_player() {
-    const openbisallink = bisallink;
-    const openVlc = `vlc://${openbisallink}`;
+    const openlinkin_link = linkin_link;
+    const openVlc = `vlc://${openlinkin_link}`;
     window.location.href = openVlc;
 }
 
 function mx_player() {
-    const openbisallink = bisallink;
-    const openMx = `intent:${openbisallink}#Intent;package=com.mxtech.videoplayer.ad;end`;
+    const openlinkin_link = linkin_link;
+    const openMx = `intent:${openlinkin_link}#Intent;package=com.mxtech.videoplayer.ad;end`;
     window.location.href = openMx;
 }
 
 function playit_player() {
-    const openbisallink = bisallink;
-    const openPlayit = `playit://playerv2/video?url=${openbisallink}`;
+    const openlinkin_link = linkin_link;
+    const openPlayit = `playit://playerv2/video?url=${openlinkin_link}`;
     window.location.href = openPlayit;
 }
 
 function s_player() {
-    const openbisallink = bisallink;
-    const openSplayer = `intent:${openbisallink}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
+    const openlinkin_link = linkin_link;
+    const openSplayer = `intent:${openlinkin_link}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
     window.location.href = openSplayer;
 }
 
 function km_player() {
-    const openbisallink = bisallink;
-    const openKmplayer = `intent:${openbisallink}#Intent;package=com.kmplayer;end`;
+    const openlinkin_link = linkin_link;
+    const openKmplayer = `intent:${openlinkin_link}#Intent;package=com.kmplayer;end`;
     window.location.href = openKmplayer;
 }
 
 function hd_player() {
-    const openbisallink = bisallink;
-    const openHDplayer = `intent:${openbisallink}#Intent;package=uplayer.video.player;end`;
+    const openlinkin_link = linkin_link;
+    const openHDplayer = `intent:${openlinkin_link}#Intent;package=uplayer.video.player;end`;
     window.location.href = openHDplayer;
 }
 
 function bisalDownload() {
-    const openbisallink = bisallink;
-    window.location.href = openbisallink;
+    const openlinkin_link = linkin_link;
+    window.location.href = openlinkin_link;
 }
 
 function xPlayer() {
-    const openBisalLink = bisallink;
-    const openXPlayer = `intent:${openBisalLink}#Intent;package=com.daljeet.xplayer;end`;
+    const openlinkin_link = linkin_link;
+    const openXPlayer = `intent:${openlinkin_link}#Intent;package=com.daljeet.xplayer;end`;
     window.location.href = openXPlayer;
 }
 
