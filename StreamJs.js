@@ -16,7 +16,7 @@ let footer = document.querySelector('footer')
 let timer = 0
 
 if (document.getElementById("heading").classList.contains("title")) {
-    document.querySelector(".title").textContent = 'BISAL FILES'
+    document.querySelector(".title").textContent = 'iPapkornBot'
 }
 
 
@@ -261,7 +261,7 @@ function hd_player() {
     window.location.href = openHDplayer;
 }
 
-function bisalDownload() {
+function linkinDownload() {
     const openlinkin_link = linkin_link;
     window.location.href = openlinkin_link;
 }
