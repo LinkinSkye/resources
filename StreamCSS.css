@@ -1,6 +1,6 @@
 :root {
     --mycol: #BCA9F5;
-    --gcol: linear-gradient(to right, red, blue);
+    --gcol: linear-gradient(to right, rgb(102, 68, 255), blue);
 }
 
 span {
