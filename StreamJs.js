@@ -1,9 +1,7 @@
 let homeBtn = document.querySelector(".home-btn")
 let abtBtn = document.querySelector(".about-btn")
 let dldBtn_outer = document.querySelector(".downloadBtn")
-let appBtn_outer = document.querySelector(".appBtn")
 let file_name = document.querySelector(".file-name")
-let note_msg = document.querySelector(".note-msg")
 let about_nav = document.querySelector(".about-nav")
 let bot_btn = document.querySelector('.bot-btn')
 let contact_btn = document.querySelector('.contact-btn')
@@ -28,9 +26,7 @@ homeBtn.classList.add('active');
 // when clicking about
 abtBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "none";
-    appBtn_outer.style.display = "none";
     file_name.style.display = "none";
-    note_msg.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
     about_nav.style.display = "block"
@@ -42,9 +38,7 @@ abtBtn.addEventListener("click", () => {
 // when clicking home
 homeBtn.addEventListener("click", () => {
     dldBtn_outer.style.display = "flex";
-    appBtn_outer.style.display = "flex";
     file_name.style.display = "block";
-    note_msg.style.display = "block";
     footer.style.display = "block";
     window.location.href = "#main";
     about_nav.style.animation = "strtLoad 1s ease 0s forwards"
@@ -70,9 +64,7 @@ function bot_btn_clicked() {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
-    appBtn_outer.style.display = "none";
     file_name.style.display = "none";
-    note_msg.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
     about_nav.style.display = "block"
@@ -110,9 +102,7 @@ footer_bisal_btn_clicked = () => {
     });
     timer = 0;
     dldBtn_outer.style.display = "none";
-    appBtn_outer.style.display = "none";
     file_name.style.display = "none";
-    note_msg.style.display = "none";
     footer.style.display = "none";
     about_nav.style.display = "block"
     about_nav.style.display = "block"
